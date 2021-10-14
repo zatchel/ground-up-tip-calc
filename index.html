@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="scss/styles.css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header"><h1>Tip Calculator :D</h1></div>
+            <div class="bill">Bill<br>
+                <input type="number" id="billAmount" placeholder="$">
+            </div>
+            <h4>Tip Percentage</h4>
+            <div id="percentage" class="percentage">
+                
+                <button class="tipOne">5%</button>
+                <button class="tipTwo">10%</button>
+                <button class="tipThree">15%</button>
+                <button class="tipFour">20%</button>
+                <button id="custom" class="custom" onclick="becomeActive()">Custom</button>
+                <input type="text" id=""    
+            </select>
+            </div>
+            <div class="numberPeople">Number of People<br>
+                <input id="numberPeople" type="number" placeholder="Number of People">
+            </div>
+            
+            <div class="calculateButton">
+                <button id="calculate" data-calculate>Calculate</button>
+            </div>
+            
+            <div id="tipAmountDisplay" class="tipAmount">
+                TipAmountDisplay
+            </div>
+            <div id="totalDisplay" class="total">
+                TotalAmountDisplay
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js" defer></script>
+</html>

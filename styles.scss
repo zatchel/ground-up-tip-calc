@@ -1,0 +1,113 @@
+$font: 'Noto Sans Display', sans-serif;
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(26, 183, 218, 0.9), pink);
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255,255,255,.3);
+    height: 70%;
+    width: 400px;
+    border-radius: 10px;
+    }
+
+h4{
+    margin-bottom: -20px;
+    padding: 0%;
+    color: rgba(92, 92, 92, 0.9);
+    
+}
+
+
+.percentage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tipOne tipTwo"
+    "tipThree" "tipFour"
+    "custom" "custom";
+    width: 80%;
+    grid-gap: 6px;
+    // margin-bottom: 40px;
+}
+
+.tipOne{
+    grid-area: "tipOne";
+}
+
+.tipTwo{
+    grid-area: "tipTwo";
+}
+
+.tipThree{
+    grid-area: "tipThree";
+}
+
+.custom{
+    grid-area: "custom";
+    grid-column: 1/3;
+}
+
+input{
+    width: 275px;
+}
+
+h1{
+    color: rgba(92, 92, 92, 0.9);
+}
+
+
+button{
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(92, 92, 92, 0.9);
+}
+
+button:hover{
+    border: 2px solid rgba(26, 183, 218, 0.9);
+    cursor: pointer;
+}
+
+.newCustomText{
+    grid-area: "custom";
+    text-align: center;
+    margin: 0 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgba(92, 92, 92, 0.9);
+    grid-column: 1/3;
+    // background-color: rgba(92, 92, 92, 0.9);
+}
+
+.newCustomText::placeholder{
+    text-align: right;
+}
+
+.newCustomText
