@@ -37,6 +37,26 @@ body{
     border-radius: 10px;
     }
 
+.billAmount{
+    background-image: url(/icons8-us-dollar-50.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 8%;
+    text-align: center;
+    border: 2px solid rgba(92, 92, 92, 0.9);
+    border-radius: 5px;
+}
+
+.numberOfPeople{
+    background-image: url(/icons8-person-64.png);
+    background-repeat: no-repeat;
+    background-position: left 2px top 0px;
+    background-size: 8%;
+    text-align: center;
+    border: 2px solid rgba(92, 92, 92, 0.9);
+    border-radius: 5px;
+}
+
 h4{
     position: relative;
     bottom: 15px;
@@ -85,6 +105,46 @@ h1{
     color: rgba(92, 92, 92, 0.9);
 }
 
+.tipText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tipText p{
+    color: rgb(196, 109, 123);
+    position: absolute;
+    top: -15px;
+    right: 85px;
+
+}
+
+.tipText h4{
+    position: absolute;
+    right: 125px;
+}
+
+.totalText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalText p{
+    color: rgb(196, 109, 123);
+    position: absolute;
+    top: -15px;
+    right: 85px;
+
+}
+
+.totalText h4{
+    position: absolute;
+    right: 125px;
+}
+
 
 button{
     margin: 0 10px;
@@ -106,10 +166,25 @@ button:hover{
     border-radius: 5px;
     border: 2px solid rgba(92, 92, 92, 0.9);
     grid-column: 1/3;
+    background-image: url(/icons8-percentage-48.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 7%;
     // background-color: rgba(92, 92, 92, 0.9);
 }
 
-.newCustomText::placeholder{
-    text-align: center;
-    color: black;
+.tipAmount{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color:rgba(26, 183, 218, 0.9)
 }
+
+.total{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color:rgba(26, 183, 218, 0.9)
+}
+
+
+
+

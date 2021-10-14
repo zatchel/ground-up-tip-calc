@@ -50,6 +50,26 @@ body {
   border-radius: 10px;
 }
 
+.billAmount {
+  background-image: url(/icons8-us-dollar-50.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 8%;
+  text-align: center;
+  border: 2px solid rgba(92, 92, 92, 0.9);
+  border-radius: 5px;
+}
+
+.numberOfPeople {
+  background-image: url(/icons8-person-64.png);
+  background-repeat: no-repeat;
+  background-position: left 2px top 0px;
+  background-size: 8%;
+  text-align: center;
+  border: 2px solid rgba(92, 92, 92, 0.9);
+  border-radius: 5px;
+}
+
 h4 {
   position: relative;
   bottom: 15px;
@@ -97,6 +117,56 @@ h1 {
   color: rgba(92, 92, 92, 0.9);
 }
 
+.tipText {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tipText p {
+  color: #c46d7b;
+  position: absolute;
+  top: -15px;
+  right: 85px;
+}
+
+.tipText h4 {
+  position: absolute;
+  right: 125px;
+}
+
+.totalText {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.totalText p {
+  color: #c46d7b;
+  position: absolute;
+  top: -15px;
+  right: 85px;
+}
+
+.totalText h4 {
+  position: absolute;
+  right: 125px;
+}
+
 button {
   margin: 0 10px;
   border-radius: 5px;
@@ -119,25 +189,21 @@ button:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
+  background-image: url(/icons8-percentage-48.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 7%;
 }
 
-.newCustomText::-webkit-input-placeholder {
-  text-align: center;
-  color: black;
+.tipAmount {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: rgba(26, 183, 218, 0.9);
 }
 
-.newCustomText:-ms-input-placeholder {
-  text-align: center;
-  color: black;
-}
-
-.newCustomText::-ms-input-placeholder {
-  text-align: center;
-  color: black;
-}
-
-.newCustomText::placeholder {
-  text-align: center;
-  color: black;
+.total {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: rgba(26, 183, 218, 0.9);
 }
 /*# sourceMappingURL=styles.css.map */
