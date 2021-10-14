@@ -23,7 +23,7 @@ calculateButton.addEventListener('click', function(){
 function becomeActive(){
     let boxExists = document.getElementsByClassName("newCustomText").length;
     if(boxExists === 0){
-        document.getElementById("custom").outerHTML = "<input type='text' class='newCustomText'> <br> <span class='placeholder'>%</span>";
+        document.getElementById("custom").outerHTML = "<input type='text' class='newCustomText' placeholder='%'>";
 
     console.log("custom");
     }

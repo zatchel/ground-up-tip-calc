@@ -38,6 +38,8 @@ body{
     }
 
 h4{
+    position: relative;
+    bottom: 15px;
     margin-bottom: -20px;
     padding: 0%;
     color: rgba(92, 92, 92, 0.9);
@@ -97,9 +99,10 @@ button:hover{
 
 .newCustomText{
     grid-area: "custom";
+    position: relative;
     text-align: center;
     margin: 0 10px;
-    width: 300px;
+    width: 93%;
     border-radius: 5px;
     border: 2px solid rgba(92, 92, 92, 0.9);
     grid-column: 1/3;
@@ -107,7 +110,6 @@ button:hover{
 }
 
 .newCustomText::placeholder{
-    text-align: right;
+    text-align: center;
+    color: black;
 }
-
-.newCustomText
