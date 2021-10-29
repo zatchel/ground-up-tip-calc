@@ -78,6 +78,14 @@ h4 {
   color: rgba(92, 92, 92, 0.9);
 }
 
+.tipPercentageNumber {
+  position: relative;
+  bottom: 15px;
+  margin-bottom: -10px;
+  padding: 0%;
+  color: rgba(92, 92, 92, 0.9);
+}
+
 .percentage {
   display: -ms-grid;
   display: grid;
@@ -85,7 +93,9 @@ h4 {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "tipOne tipTwo" "tipThree" "tipFour" "custom" "custom";
+      grid-template-areas: "tipOne tipTwo"
+ "tipThree" "tipFour"
+ "custom" "custom";
   width: 80%;
   grid-gap: 6px;
 }
@@ -157,14 +167,15 @@ h1 {
 
 .totalText p {
   color: #c46d7b;
-  position: absolute;
-  top: -5px;
-  right: 85px;
+  position: relative;
+  bottom: 65px;
+  right: 115px;
 }
 
 .totalText h4 {
   position: absolute;
-  right: 125px;
+  right: 160px;
+  bottom: 125px;
 }
 
 button {

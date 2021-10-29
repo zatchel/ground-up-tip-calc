@@ -12,43 +12,41 @@
 </head>
 <body>
 
-    <div class="wrapper">
-        <div class="container">
-            <div class="header"><h1>Tip Calculator</h1></div>
-            <div class="bill"><h4 class="bill">Bill</h4><br>
-                <input type="number" min="0" id="billAmount" class="billAmount">
-            </div>
-            <h4 class = "tipPercentageNumber">Tip Percentage</h4>
-            <div id="percentage" class="percentage">
-                
-                <button class="tipOne" id="tipFive" value=".05" onclick="makeTipFive();"> 5% </button>
-                <button class="tipTwo" id="tipTen" value=".10" onclick="makeTipTen();">10%</button>
-                <button class="tipThree" id="tipFifteen" value=".15" onclick="makeTipFifteen();">15%</button>
-                <button class="tipFour" id="tipTwenty" value=".20" onclick="makeTipTwenty();">20%</button>
-                <button id="custom" class="custom" value=".05" onclick="becomeActive()">Custom</button>  
-            </select>
-            </div>
-            <div class="numberPeople"><h4 class="people">Number of People</h4><br>
-                <input id="numberPeople" min="0" class="numberOfPeople" type="number">
-            </div>
+<div class="wrapper">
+    <div class="container">
+        <div class="header"><h1>Tip Calculator</h1></div>
+        <div class="bill"><h4 class="bill">Bill</h4><br>
+            <input type="number" min="0" id="billAmount" class="billAmount">
+        </div>
+        <h4 class = "tipPercentageNumber">Tip Percentage</h4>
+        <div id="percentage" class="percentage">
             
-            <div class="calculateButton">
-                <button id="calculate" data-calculate>Calculate</button>
-            </div>
-            <div class="tipText">
-                <h4 class="tipPer">Tip</h4><p class="tipPerPerson"> /person</p>
-            </div>
-            
-            <div id="tipAmountDisplay" class="tipAmount">
-                
-            </div>
+            <button class="tipOne" id="tipFive" value=".05" onclick="makeTipFive();"> 5% </button>
+            <button class="tipTwo" id="tipTen" value=".10" onclick="makeTipTen();">10%</button>
+            <button class="tipThree" id="tipFifteen" value=".15" onclick="makeTipFifteen();">15%</button>
+            <button class="tipFour" id="tipTwenty" value=".20" onclick="makeTipTwenty();">20%</button>
+            <button id="custom" class="custom" value=".05" onclick="becomeActive()">Custom</button>  
+        </select>
+        </div>
+        <div class="numberPeople"><h4 class="people">Number of People</h4><br>
+            <input id="numberPeople" min="0" class="numberOfPeople" type="number">
+        </div>
+        
+        <div class="calculateButton">
+            <button id="calculate" data-calculate>Calculate</button>
+        </div>
+        <div class="tipText">
+            <h4 class="tipPer">Tip</h4><p class="tipPerPerson"> /person</p>
+        </div>
+        <div class="displayWrapper">
+            <div id="tipAmountDisplay" class="tipAmount">  </div>
+            <div id="totalDisplay" class="total">  </div>
+        
             <div class="totalText">
-                <h4 class="totalPer">Bill</h4><p class="totalPerPerson"> /person</p>
-            </div>
-            <div id="totalDisplay" class="total">
-                
+            <h4 class="totalPer">Bill</h4><p class="totalPerPerson"> /person</p>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>

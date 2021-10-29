@@ -143,15 +143,17 @@ h1{
 
 .totalText p{
     color: rgb(196, 109, 123);
-    position: absolute;
-    top: -5px;
-    right: 85px;
+    position: relative;
+    bottom: 65px;
+    right: 115px;
+
 
 }
 
 .totalText h4{
     position: absolute;
-    right: 125px;
+    right: 160px;
+    bottom: 125px;
 }
 
 
